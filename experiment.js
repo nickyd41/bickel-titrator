@@ -122,7 +122,7 @@ var convertToDays = function(time) {
     case '1 month':
       return 30
       break;
-    case '60 months':
+    case '6 months':
       return 180
       break;
     case '1 year':
@@ -345,7 +345,7 @@ bickel_titrator_experiment.push(instruction_node);
 
 for (var k = 0; k < magnitudes.length; k++) {
   bickel_titrator_experiment.push(update_mag_block);
-  for (var i = 0; i < delays.length; i++) {
+  for (var i = 0; i < delays.length+1; i++) {
     bickel_titrator_experiment.push(update_delay_block);
     for (var j = 0; j < 5; j++) {
       bickel_titrator_experiment.push(test_block);
